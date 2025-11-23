@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header with Logo and Navigation</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 20px;
+    background-color: #4d4b4c;
+    color: rgb(14, 13, 13);
+  }
+  
+  .logo img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav ul li {
+    margin-left: 20px;
+  }
+  
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .nav ul li a:hover {
+    background-color: #b30808;
+    border-radius: 5px;
+  }
+  .main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;}
+
+.section-1 ul li {
+  margin: 10px 0;
+}
+.section-1 ul li a {
+    color: rgb(7, 0, 0);
+    text-decoration:none;
+    font-size: 16px;
+    padding: 5px 10px;}
+.section-1 ul li a:hover {
+    background-color: #ebe0e0;
+    border-radius: 5px;
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+footer{
+  background-color: cadetblue;
+}
+.gallery{
+  align-self: center;
+}
+#copyright{
+  text-align: end;
+}
+img{
+  border-radius: 50%;
+}
+#partner{
+  border-radius:0%;
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="brand.png" alt="Logo">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content"></main>
+  <section class="section-1">
+    <h2>Health store</h2>
+    <ul>
+      <li> <a href="#">Baby needs</a></li>
+      <li><a href="#">women care</a></li>
+      <li> <a href="#">Diabetic needs</a></li>
+      <li><a href="#">Vitamins/Suppliments </a></li>
+      <li><a href="#">Ayurvedic</a></li>
+    </ul>
+  </section>
+  <section class="section-2">
+    <h2>Our Services</h2>
+    <div class="gallery">
+     <img src="img1.png" alt="Image 1">
+      <img src="img2.png" alt="Image 2">
+      <img src="img3.png" alt="Image 3">
+    </div>
+  </section></main>
+</body><br><br>
+  <footer><br>
+    <b>Medplus Partner </b><img id="partner" src="footer.png" alt="medpluspartner"><br> <b>Follow us on</b> <img src="logo1.png" alt="Facebook"> <img src="logo2.png" alt="Youtube"> <img src="logo3.png" alt="Twitter"> <img src="logo4.png" alt="Linkedin">
+    <p id="copyright">© copyright w3schools.com</p>
+  </footer>
+</html>
